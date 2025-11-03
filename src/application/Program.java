@@ -13,6 +13,6 @@ public class Program {
         System.out.println(obj);
 
         Seller obj1 = new Seller(21, "Bob", "bobgod@gmail.com", new Date(), 3000.0, obj);
-        System.out.println(obj1);
+
     }
 }
