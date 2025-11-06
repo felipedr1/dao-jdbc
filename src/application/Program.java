@@ -14,16 +14,14 @@ public class Program {
 
     public static void main(String[] args) {
 
+        Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, new Department(1, null));
         SellerDao sellerDao = DaoFactory.createSellerDao();
+        sellerDao.insert(newSeller);
+        System.out.println("Inserted! New id = " + newSeller.getId());
 
-        Seller seller = sellerDao.findById(3);
-        System.out.println(seller);
 
-        Department department = new Department(2, null);
-        List<Seller> list = sellerDao.findByDepartment(department);
-        for (Seller obj : list) {
-            System.out.println(obj);
+
         }
 
     }
-}
+
