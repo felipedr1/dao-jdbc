@@ -24,3 +24,10 @@ hs_err_pid*
 replay_pid*
 
 copilot*.xml
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
